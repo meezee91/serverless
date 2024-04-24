@@ -1,0 +1,23 @@
+service: tarmizi-serverless-i
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /
+          method: get
+  tarmiziapi:
+    handler: index.handlerpost
+    events:
+      - httpApi:
+          path: /mizi
+          method: post
+
+plugins:
+  - serverless-offline
