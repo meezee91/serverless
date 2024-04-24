@@ -13,7 +13,7 @@ functions:
           path: /
           method: get
   tarmiziapi:
-    handler: index.handlerpost
+    handler: index.handlerPost
     events:
       - httpApi:
           path: /mizi
