@@ -22,6 +22,19 @@ functions:
       - httpApi:
           path: /mizi
           method: post
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - TarmiziQueue
+              - Arn
+
+
+resources:
+  Resources:
+    TarmiziQueue:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: "tarmizi-queue"
 
 plugins:
   - serverless-offline
