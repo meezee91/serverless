@@ -6,14 +6,14 @@ provider:
   runtime: nodejs18.x
 
 functions:
-  api:
-    handler: index.handler
+  function-one:
+    handler: index.firsthandler
     events:
       - httpApi:
           path: /
           method: get
-  tarmiziapi:
-    handler: index.handlerPost
+  function-two:
+    handler: index.secondhandler
     events:
       - httpApi:
           path: /mizi
