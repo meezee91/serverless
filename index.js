@@ -5,7 +5,6 @@ module.exports.firsthandler = async (event) => {
     body: JSON.stringify(
       {
         message: "Your function executed successfully!",
-        input: event,
       },
       null,
       2
@@ -20,7 +19,6 @@ module.exports.secondhandler = async (event) => {
     body: JSON.stringify(
       {
         message: "This is POST function!",
-        input: event,
       },
       null,
       2
