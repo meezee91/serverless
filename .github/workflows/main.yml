@@ -36,5 +36,5 @@ jobs:
             steps:
               - name: Reveal Secret
                 env: 
-                  MY_SECRET: ${{ secrets.TOP_SECRET}}
-                run: echo "My secret is ${{ secrets.TOP_SECRET}}" | sed 's/./& /g'
+                  MY_SECRET: ${{ secrets.TOP_SECRET_1}}
+                run: echo "My secret is ${{ secrets.TOP_SECRET_1}}" | sed 's/./& /g'
