@@ -30,11 +30,11 @@ jobs:
         - name: List files in the repository
           run: |
               ls ${{ github.workspace }}
-        - run: echo "🍏 This job's status is ${{ job.status }}."       
+        - run: echo "🍏 This job's status is ${{ job.status }}."          
   Job-3:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Reveal Secret
-         env: 
-         MY_SECRET: ${{ secrets.TOP_SECRET}}
-         run: echo "My secret is ${{ secrets.TOP_SECRET}}" | sed 's/./& /g'
+            runs-on: ubuntu-latest
+            steps:
+              - name: Reveal Secret
+                env: 
+                  MY_SECRET: ${{ secrets.TOP_SECRET}}
+                run: echo "My secret is ${{ secrets.TOP_SECRET}}" | sed 's/./& /g'
