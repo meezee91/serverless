@@ -18,7 +18,7 @@
   "homepage": "https://github.com/meezee91/serverless#readme",
   "devDependencies": {
     "jest": "^29.7.0",
-    "serverless-offline": "^13.3.4"
+    "serverless-offline": "^13.5.0"
   },
   "dependencies": {
     "global": "^4.4.0"
