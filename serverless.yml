@@ -14,8 +14,8 @@ functions:
       - httpApi:
           path: /
           method: get
-      - sqs:
-          arn: arn:aws:sqs:us-east-1:255945442255:tarmizi-sqs
+
+
   function-two:
     handler: index.secondhandler
     events:
