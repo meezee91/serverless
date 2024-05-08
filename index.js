@@ -4,7 +4,7 @@ module.exports.firsthandler = async (event) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: "Your function executed successfully!",
+        message: "This is get function!",
       },
       null,
       2

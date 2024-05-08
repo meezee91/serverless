@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/meezee91/serverless#readme",
   "devDependencies": {
+    "jest": "^29.7.0",
     "serverless-offline": "^13.3.4"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
   }
 }
